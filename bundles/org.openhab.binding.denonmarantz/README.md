@@ -87,14 +87,14 @@ Thing denonmarantz:avr:1 "Receiver" @ "Living room" [host="192.168.1.100"]
 `.items` file:
 
 ```
-Switch marantz_power    "Receiver" <switch>         {channel="denonmarantz:avr:1:general#power"}
-Dimmer marantz_volume   "Volume"   <soundvolume>    {channel="denonmarantz:avr:1:mainZone#volume"}
-Number marantz_volumeDB "Volume [%.1f dB]"          {channel="denonmarantz:avr:1:mainzone#volume"}
-Switch marantz_mute     "Mute"     <mute>           {channel="denonmarantz:avr:1:mainZone#mute"}
-Switch marantz_z2power  "Zone 2"                    {channel="denonmarantz:avr:1:zone2#power"}
-String marantz_input    "Input [%s]"                {channel="denonmarantz:avr:1:mainZone#input" }
-String marantz_surround "Surround: [%s]"            {channel="denonmarantz:avr:1:general#surroundProgram"}
-String marantz_command                              {channel="denonmarantz:avr:1:general#command"}
+Switch marantz_power    "Receiver" <switch>             {channel="denonmarantz:avr:1:general#power"}
+Dimmer marantz_volume   "Volume"   <soundvolume>        {channel="denonmarantz:avr:1:mainZone#volume"}
+Number marantz_volumeDB "Volume [%.1f dB]"              {channel="denonmarantz:avr:1:mainzone#volume"}
+Switch marantz_mute     "Mute"     <soundvolume_mute>   {channel="denonmarantz:avr:1:mainZone#mute"}
+Switch marantz_z2power  "Zone 2"                        {channel="denonmarantz:avr:1:zone2#power"}
+String marantz_input    "Input [%s]"                    {channel="denonmarantz:avr:1:mainZone#input" }
+String marantz_surround "Surround: [%s]"                {channel="denonmarantz:avr:1:general#surroundProgram"}
+String marantz_command                                  {channel="denonmarantz:avr:1:general#command"}
 ```
 
 `.sitemap` file:
